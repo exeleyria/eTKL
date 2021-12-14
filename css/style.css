@@ -95,7 +95,13 @@ footer{
     display: grid;
     justify-items: end;
 }
-
+.topLogo{
+    width: 60%;
+}
+.footer-logo img{
+    width: 40%;
+    align-content: flex-end ;
+}
 /*RESPONSIVE*/
 @media  screen and  (max-width: 768px){
     nav ul{
@@ -140,5 +146,8 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .footer-logo {
+        width:  60%;
     }
 }   
