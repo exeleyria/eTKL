@@ -4,59 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eTKL</title>
-	<link rel="stylesheet" href="../css/style.css">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <header class="barra">
-		<div class="topLogo">
-			<a href="../index.html">
-				<img  src="../imagenes/tkl.png" alt="logo"/>
-			</a>
-		</div>
-		<nav class="menu">
-			<ul>
-				<li><a href="./build.html">DISEÑA TU TECLADO</a></li>
-				<li><a href="./marcas.html">NUESTRAS MARCAS</a></li>
-				<li><a href="./info.html">INFORMACIÓN</a></li>
-				<li><a href="./contacto.html">CONTACTO</a></li>
-			</ul>
-		</nav>
-		<div class="buscar">
-			<input type="text" name="search"><input type="button"
-			class="buscador__enviar" value="Buscar" name="buscar">
-		</div>
-	</header>
-	<main class="fondo">
-		<div class="seccion1">
-			<h2>Quienes Somos?</h2>
-			<h3 >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque, mollitia quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsa inventore, debitis distinctio voluptatem atque tempora corrupti quod optio laborum odit, molestias tenetur, nesciunt dolorum doloremque perferendis ex! Eius, voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Eligendi tenetur aperiam laudantium nobis repellat quibusdam cum debitis, consectetur dolorem fugit magnam veniam non saepe, reiciendis, tempora nihil quia nisi, harum? Lorem ipsum, dolor, sit amet consectetur adipisicing elit.</h3>
-		</div>
-		<div>
-			<a href="index.html" target="_blank"><img src="../imagenes/hyper.jpeg" alt="etkl" width="100%"></a>
-		</div>
-		
-	</main>
-	<footer class="footer">
-		<div class="footer-info">
-			<h3 class="titulo">eTKL</h3>
-			<h4 class="titulo">ATENCIÓN AL CLIENTE:</h4>
-				<p>
-				0800-555-9999
-				</p>
-				<p>
-				consultas@etkl.com.ar
-				</p>
-				<p>
-				WhatsApp +54 351 1129-1129
-				</p>
-				<p>
-				Lunes a Viernes de 9 a 19h. 
-				</p>
-		</div>	
-		<div class="footer-logo">
-			<img src="../imagenes/tkl.png" alt="logo"/>
-		</div>
-	</footer>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-opacity-75 navbar-expand-lg  bg-success navbar-scroll" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">eTKL</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./info.html">Info</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      SHOP
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Keyboards</a></li>
+                      <li><a class="dropdown-item" href="#">Custumize keyboards</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="bg-white container-md p-5">
+      <div class="text-center ">
+        <div class="container-fluid ">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="text-uppercase">QUIENES SOMOS?</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                aliquam voluptatem veniam, est atque cumque eum delectus sint!
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h1>UBICANCION</h1>
+			        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d715.7495964132628!2d-64.18784632254996!3d-31.422444315950223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x9432a285cf7f3b49%3A0x630f3765441ac275!2sCordoba%20Business%20Tower!5e0!3m2!1ses-419!2sar!4v1636927388709!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <footer class="container-fluid  bg-success bg-opacity-75" >
+      <div class="container-fluid p-4 ">
+        <div class="row">
+          <div class="col-md-6 ">
+            <h5 class="text-uppercase">eTKL</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+              aliquam voluptatem veniam, est atque cumque eum delectus sint!
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img class="w-50" src="./imagenes/tkl.png" alt="logo">
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>

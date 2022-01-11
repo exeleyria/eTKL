@@ -4,73 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eTKL</title>
-	<link rel="stylesheet" href="./css/style.css">
+    <title>eTKL - Home</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="barra">
-			<div class="topLogo">
-				<a href="index.html">
-					<img  src="./imagenes/tkl.png" alt="logo"/>
-				</a>
-			</div>
-			<nav class="menu">
-				<ul>
-					<li><a href="./paginas/build.html">DISEÑA TU TECLADO</a></li>
-					<li><a href="./paginas/marcas.html">NUESTRAS MARCAS</a></li>
-					<li><a href="./paginas/info.html">INFORMACIÓN</a></li>
-					<li><a href="./paginas/contacto.html">CONTACTO</a></li>
-				</ul>
-			</nav>
-			<div class="buscar">
-				<input type="text" name="search"><input type="button"
-                class="buscador__enviar" value="Buscar" name="buscar">
-			</div>
-	</header>
-	<main class="fondo">	
-		<div class="carrusel">
-			<img src="./imagenes/hyper.jpeg" alt="etkl">
-			<img src="./imagenes/logitech.png" alt="etkl">
-			<img src="./imagenes/kumara.jpg" alt="etkl" width="1000">
-		</div>
-		
-		<section class="seccion2">
-				<h2 class="tituloSeccion">DISEÑA TU TECLADO!</h2>
-				<a href=""></a>
-				<a href="./paginas/build.html"><img src="./imagenes/switch.jpg" alt=""></a>
-			
-			
-		</section>
-		<section class="seccion2">
-				<h2 class="tituloSeccion">NUESTRAS MARCAS</h2>
-				<a class="imgProv" href="https://www.logitech.com/es-ar/keyboards"><img src="./imagenes/logitech-logo-1.png" width="200" height="120"	></a>
-				<a class="imgProv" href="https://www.hyperxgaming.com/es/keyboards"><img src="./imagenes/hyperxlogo.png" width="200" height="140"	></a>
-				<a class="imgProv" href="https://redragon.es/products/?category=teclados"><img src="./imagenes/redragoinlogo.png" width="200" height="200"	></a>
-		</section>
-		<div class="linea-animada">
-		
-		</div>
-	</main>
-	<footer class="footer">
-		<div class="footer-info">
-			<h3 class="titulo">eTKL</h3>
-			<h4 class="titulo">ATENCIÓN AL CLIENTE:</h4>
-				<p>
-				0800-555-9999
-				</p>
-				<p>
-				consultas@etkl.com.ar
-				</p>
-				<p>
-				WhatsApp +54 351 1129-1129
-				</p>
-				<p>
-				Lunes a Viernes de 9 a 19h. 
-				</p>
-		</div>	
-		<div class="footer-logo">
-			<img src="./imagenes/tkl.png" alt="logo"/>
-		</div>
-	</footer>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-opacity-75 navbar-expand-lg bg-success  navbar-scroll" > 
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><img src="./imagenes/tkl.png" alt="" width="80" height="30"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./info.html">Info</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" dat-bs-toggle="dropdown" aria-expanded="false">
+                      SHOP
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Keyboards</a></li>
+                      <li><a class="dropdown-item" href="./shop.html">Custumize keyboards</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-danger" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main >
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../bootstrap/imagenes/hyper.jpeg" class="d-block w-100" alt="imagen1">
+              </div>
+              <div class="carousel-item">
+                <img src="../bootstrap/imagenes/logitech.png" class="d-block w-100" alt="imagen2">
+              </div>
+              <div class="carousel-item">
+                <img src="../bootstrap/imagenes/kumara.jpg" class="d-block w-100" alt="imagen3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="container">
+            <div  class="heading_container heaading_center d-flex justify-content-center">
+              <h2 class="heaading_center text-center  "><span>NUESTAS MARCAS</span></h2>
+            </div>
+            <div class="row p-4 ">
+              <div class="col-sm-6 col-md-4 col-lg-4 d-flex justify-content-center" >
+                <div class="imgProv " href="https://www.logitech.com/es-ar/keyboards"><img src="./imagenes/logitech-logo-1.png" width="200" height="120"	></div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 d-flex justify-content-center" >
+                <div class="imgProv" href="https://www.hyperxgaming.com/es/keyboards"><img src="./imagenes/hyperxlogo.png" width="200" height="140"	></div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 d-flex justify-content-center" >
+                <div class="imgProv" href="https://redragon.es/products/?category=teclados"><img src="./imagenes/redragoinlogo.png" width="200" height="200"	></div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <footer class="container-fluid  bg-success bg-opacity-75" >
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-md-6 ">
+            <h5 class="text-uppercase">eTKL</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+              aliquam voluptatem veniam, est atque cumque eum delectus sint!
+            </p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-evenly align-items-center">
+            <img class="w-50" src="./imagenes/tkl.png" alt="logo">
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
